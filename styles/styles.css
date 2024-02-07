@@ -3,9 +3,9 @@
 	--red: #a71414;
 	--header-image: url('../images/backgrounds/background_header6.webp');
 	--samples-image: url('../images/backgrounds/background_header20.webp');
+	--video-image: url('../images/backgrounds/background_contact.webp');
 	--clients-image: url('../images/backgrounds/background_header18.webp');
 	--studio-image: url('../images/backgrounds/background_header25.webp');
-	--contact-image: url('../images/backgrounds/background_contact.webp');
 	--contact-image: url('../images/backgrounds/background_header19.webp');
 
 }
@@ -160,6 +160,13 @@ nav {
 
 #samples {
 	background-image: var(--samples-image);
+	background-position: center;
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+#video {
+	background-image: var(--video-image);
 	background-position: center;
 	background-size: contain;
 	background-repeat: repeat;
