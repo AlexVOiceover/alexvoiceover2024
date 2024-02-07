@@ -1,6 +1,13 @@
 :root {
 	--text-color: #ebebeb; /* Define a text color variable */
 	--red: #a71414;
+	--header-image: url('../images/backgrounds/background_header6.webp');
+	--samples-image: url('../images/backgrounds/background_header20.webp');
+	--clients-image: url('../images/backgrounds/background_header18.webp');
+	--studio-image: url('../images/backgrounds/background_header25.webp');
+	--contact-image: url('../images/backgrounds/background_contact.webp');
+	--contact-image: url('../images/backgrounds/background_header19.webp');
+
 }
 
 html {
@@ -43,18 +50,31 @@ header {
 	display: flex; /* Use flexbox to layout children */
 	flex-direction: column;
 	justify-content: space-between; /* Space out nav and branding */
-	background-image: url('../images/backgrounds/background_header.webp');
+	background-image: var(--header-image);
+	background-position: center;
+	background-size: contain;
+	background-repeat: repeat;
 	padding: 1rem;
 	padding-top: 1rem;
 	padding-bottom: 0;
-	/* border-bottom: 2rem solid #000000; */
+	position: relative;
 }
+
+.header-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Centers the logo */
+	z-index: 1; /* Ensures the logo is on top of the background image */
+  }
 
 .branding {
 	display: flex;
 	justify-content: space-between; /* Align the face image to the right */
 	flex-wrap: wrap-reverse;
 	width: 100%; /* Take up the remaining space */
+	z-index: 2;
+
 }
 
 .face-image {
@@ -65,6 +85,7 @@ header {
 	height: auto; /* Maintain aspect ratio */
 	padding-right: 2vw;
 	filter: drop-shadow(3px -3px 6px rgba(0, 0, 0, 0.8)); /* Example shadow */
+
 }
 
 nav {
@@ -94,7 +115,7 @@ nav {
 	text-decoration: none; /* Remove underline from links */
 	color: var(--text-color); /* Color of the nav links */
 	font-weight: 400; /* Make the nav links bold */
-	font-size: clamp(1rem, 3vw, 2rem);
+	font-size: clamp(1rem, 2.5vw, 1.5rem);
 	text-shadow: 2px 2px 8px #000000;
 	transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
 }
@@ -119,6 +140,7 @@ nav {
 	align-items: flex-end; /* Align items to the right */
 	flex: 1.5;
 	padding-right: 1rem;
+	z-index: 2;
 }
 
 .logo a {
@@ -137,7 +159,9 @@ nav {
 }
 
 #samples {
-	background-image: url('../images/backgrounds/background_samples.webp');
+	background-image: var(--samples-image);
+	background-position: center;
+	background-size: contain;
 	background-repeat: repeat;
 }
 
@@ -182,8 +206,10 @@ audio {
 }
 
 #clients {
-	background-image: url('../images/backgrounds/background_happyClients.webp');
+	background-image: var(--clients-image);
 	background-position: center;
+	background-size: contain;
+	background-repeat: repeat;
 	animation: slideBackground 70s linear infinite; /* Adjust time as needed */
 }
 
@@ -246,8 +272,10 @@ audio {
 
 #studio {
 	background-color: #c0c0c0;
-	background-image: url('../images/backgrounds/background_studio.webp');
-	background-repeat: repeat; /* Make sure the image repeats vertically */
+	background-image: var(--studio-image);
+	background-position: center;
+	background-size: contain;
+	background-repeat: repeat;
 	/* 
 	animation: slideBackgroundTopToBottom 70s linear infinite; */
 }
@@ -315,9 +343,11 @@ audio {
 }
 
 #contact {
-	background-image: url('../images/backgrounds/background_contact.webp');
+	background-image: var(--contact-image);
 	padding: 0.5rem;
 	background-position: center;
+	background-size: contain;
+	background-repeat: repeat;
 	animation: slideBackground 90s linear infinite; /* Adjust time as needed */
 }
 
