@@ -1,7 +1,5 @@
 
-![banner](https://github.com/AlexVOiceover/romaniavoice2024/assets/94972293/a20aa0ad-1611-4503-af7d-098e36656129)
-
-# Adriana Popescu - Romanian Voiceover
+# Alexander Rodriguez - Spanish Voiceover & Sound Engineer
 
 Welcome to the repository for the official website of Adriana Popescu, a professional Romanian voice actress based in London. This website is designed to showcase Adriana's unique voice talent and provide a platform for potential clients to listen to voice samples, view a list of happy clients, and contact her for voice-over work.
 
