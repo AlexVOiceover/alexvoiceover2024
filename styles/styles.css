@@ -217,7 +217,6 @@ audio {
 	background-size: contain;
 	background-repeat: repeat;
 	animation: slideBackground 70s linear infinite; /* Adjust time as needed */
-	height: clamp(30rem, 83vw, 55rem);
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
@@ -235,19 +234,23 @@ audio {
 .swiper {
 	padding-left: 10vw;
 	padding-right: 5vw;
+	height: clamp(30rem, 105vw, 60rem);
 }
 
 /* This will style each individual slide within Swiper */
 .swiper-slide {
 	text-align: center;
 	align-self: center;
+	width: clamp(5rem, 12vw, 10rem);
+	height: clamp(5rem, 12vw, 10rem);
 }
 
 /* This will style the images within each slide */
 .client-image {
 	background: rgba(117, 117, 117, 0.7); /* Semi-transparent background */
 	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); /* Adjust the box shadow to your preference */
-	width: clamp(5rem, 15vw, 12rem);
+	width: 80%;
+	height: auto;
 	padding: 0.5rem;
 }
 
