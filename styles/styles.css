@@ -234,7 +234,7 @@ audio {
 .swiper {
 	padding-left: 10vw;
 	padding-right: 5vw;
-	height: clamp(30rem, 105vw, 60rem);
+	height: clamp(30rem, 105vw, 80rem);
 }
 
 /* This will style each individual slide within Swiper */

@@ -2,12 +2,12 @@
 var swiper = new Swiper('.swiper', {
 	loop: true,
 	slidesPerView: 2,
-	// autoplay: {
-	// 	delay: 3000,
-	// },
+	autoplay: {
+		delay: 2000,
+	},
 	grid: {
 		rows: 4,
-		fill: 'row',
+		fill: 'column',
 	},
 	spaceBetween: 5, // Add space between slides
 	pagination: {
@@ -22,18 +22,18 @@ var swiper = new Swiper('.swiper', {
 	breakpoints: {
 		280: {
 			slidesPerView: 2,
-			spaceBetween: 0,
+			spaceBetween: 40,
 			grid: {
 				rows: 4,
-				fill: 'row',
+				fill: 'column',
 			},
 		},
 		350: {
 			slidesPerView: 3,
-			spaceBetween: 0,
+			spaceBetween: 20,
 			grid: {
 				rows: 4,
-				fill: 'row',
+				fill: 'column',
 			},
 		},
 		650: {
@@ -41,15 +41,23 @@ var swiper = new Swiper('.swiper', {
 			spaceBetween: 10,
 			grid: {
 				rows: 4,
-				fill: 'row',
+				fill: 'column',
 			},
 		},
 		1200: {
 			slidesPerView: 5,
+			spaceBetween: 50,
+			grid: {
+				rows: 4,
+				fill: 'column',
+			},
+		},
+		1600: {
+			slidesPerView: 5,
 			spaceBetween: 100,
 			grid: {
 				rows: 4,
-				fill: 'row',
+				fill: 'column',
 			},
 		},
 	},
