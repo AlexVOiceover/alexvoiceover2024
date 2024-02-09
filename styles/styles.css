@@ -219,6 +219,7 @@ audio {
 	animation: slideBackground 70s linear infinite; /* Adjust time as needed */
 	padding-left: 5vw;
 	padding-right: 5vw;
+	padding-bottom: 5vw;
 }
 
 @keyframes slideBackground {
@@ -234,7 +235,7 @@ audio {
 .swiper {
 	padding-left: 10vw;
 	padding-right: 5vw;
-	height: clamp(30rem, 105vw, 80rem);
+	height: clamp(30rem, 65vw, 70rem);
 }
 
 /* This will style each individual slide within Swiper */
@@ -247,9 +248,9 @@ audio {
 
 /* This will style the images within each slide */
 .client-image {
-	background: rgba(117, 117, 117, 0.7); /* Semi-transparent background */
-	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); /* Adjust the box shadow to your preference */
-	width: 80%;
+	background: rgba(70, 70, 70, 0.7); /* Semi-transparent background */
+	box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.4); /* Adjust the box shadow to your preference */
+	width: 60%;
 	height: auto;
 	padding: 0.5rem;
 }

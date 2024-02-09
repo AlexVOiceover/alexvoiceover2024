@@ -30,13 +30,13 @@ var swiper = new Swiper('.swiper', {
 		},
 		350: {
 			slidesPerView: 3,
-			spaceBetween: 20,
+			spaceBetween: 10,
 			grid: {
 				rows: 4,
 				fill: 'column',
 			},
 		},
-		650: {
+		550: {
 			slidesPerView: 4,
 			spaceBetween: 10,
 			grid: {
@@ -54,7 +54,7 @@ var swiper = new Swiper('.swiper', {
 		},
 		1600: {
 			slidesPerView: 5,
-			spaceBetween: 100,
+			spaceBetween: 80,
 			grid: {
 				rows: 4,
 				fill: 'column',
