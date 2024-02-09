@@ -164,10 +164,7 @@ nav {
 
 .samplesBox {
 	display: grid;
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(15rem, 1fr)
-	); /* Creates as many columns as can fit, each at least 200px wide */
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Creates as many columns as can fit, each at least 200px wide */
 	justify-items: center; /* Center items horizontally */
 	align-items: center; /* Center items vertically */
 	gap: 2rem;
@@ -220,6 +217,7 @@ audio {
 	background-size: contain;
 	background-repeat: repeat;
 	animation: slideBackground 70s linear infinite; /* Adjust time as needed */
+	height: clamp(30rem, 83vw, 55rem);
 }
 
 @keyframes slideBackground {
@@ -231,52 +229,28 @@ audio {
 	}
 }
 
-.client-logos {
+/* This will style the Swiper container */
+.swiper {
 	padding-left: 5vw;
 	padding-right: 5vw;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: clamp(2rem, 5vw, 5rem);
-	align-items: center; /* Center children horizontally */
-	justify-content: center; /* Center children vertically if there is height to distribute */
-	text-align: center; /* Center text within children */
 }
 
+/* This will style each individual slide within Swiper */
+.swiper-slide {
+	text-align: center;
+	align-self: center;
+}
+
+/* This will style the images within each slide */
 .client-image {
-	height: clamp(2rem, 5vw, 5rem);
-	width: auto;
-	background: rgba(117, 117, 117, 0.7);
-	box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 1);
+	background: rgba(117, 117, 117, 0.7); /* Semi-transparent background */
+	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); /* Adjust the box shadow to your preference */
+	width: clamp(5rem, 15vw, 12rem);
 	padding: 0.5rem;
-	animation: waveMotion 7s infinite alternate ease-in-out; /* Apply the wave motion animation */
 }
 
-.delay1 {
-	animation-delay: 10ms;
-}
-.delay2 {
-	animation-delay: 1s;
-}
-.delay3 {
-	animation-delay: 2s;
-}
-.delay4 {
-	animation-delay: 3s;
-}
-
-@keyframes waveMotion {
-	0%,
-	100% {
-		transform: translateX(0) scale(1); /* No movement, original scale */
-	}
-	50% {
-		transform: translateX(0.2vw) scale(1.02); /* Move right and zoom in a little */
-	}
-	25%,
-	75% {
-		transform: translateX(-0.2vw) scale(0.98); /* Move left and zoom out a little */
-	}
+.separator {
+	padding: 1rem;
 }
 
 #studio {
@@ -285,18 +259,7 @@ audio {
 	background-position: center;
 	background-size: contain;
 	background-repeat: repeat;
-	/* 
-	animation: slideBackgroundTopToBottom 70s linear infinite; */
 }
-/* 
-@keyframes slideBackgroundTopToBottom {
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: 0 97.5%;
-	}
-} */
 
 .studio-table {
 	display: flex;
