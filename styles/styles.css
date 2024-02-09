@@ -218,6 +218,8 @@ audio {
 	background-repeat: repeat;
 	animation: slideBackground 70s linear infinite; /* Adjust time as needed */
 	height: clamp(30rem, 83vw, 55rem);
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 
 @keyframes slideBackground {
@@ -231,7 +233,7 @@ audio {
 
 /* This will style the Swiper container */
 .swiper {
-	padding-left: 5vw;
+	padding-left: 10vw;
 	padding-right: 5vw;
 }
 
