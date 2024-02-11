@@ -486,13 +486,6 @@ a {
 	font-size: medium;
 }
 
-/* .grecaptcha-badge {
-	visibility: hidden;
-} */
-
-
-  
-
 @media all and (pointer: none), (pointer: coarse) {
 	.nav-links a {
 		font-size: 0.7rem;
@@ -514,7 +507,11 @@ a {
 	a {
 		font-size: small;
 	}
-	.swiper-button-next, .swiper-button-prev {
+	.swiper-button-next,
+	.swiper-button-prev {
 		display: none !important;
-	  }
+	}
+	.grecaptcha-badge {
+		visibility: hidden;
+	}
 }
