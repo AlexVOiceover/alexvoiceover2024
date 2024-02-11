@@ -2,9 +2,9 @@
 	--text-color: #ebebeb; /* Define a text color variable */
 	--red: #a71414;
 	--header-image: url('../images/backgrounds/background_header6.webp');
-	--samples-image: url('../images/backgrounds/background_header20.webp');
-	--video-image: url('../images/backgrounds/background_contact.webp');
-	--clients-image: url('../images/backgrounds/background_header18.webp');
+	--samples-image: url('../images/backgrounds/background_samples.webp');
+	--video-image: url('../images/backgrounds/background_header9.webp');
+	--clients-image: url('../images/backgrounds/background_header7.webp');
 	--studio-image: url('../images/backgrounds/background_header25.webp');
 	--contact-image: url('../images/backgrounds/background_header19.webp');
 }
